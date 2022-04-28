@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
     <title>Book editor</title>
 </head>
 <body>
@@ -11,17 +11,90 @@
 </header>
 
 <main>
-    <h1 class="text-3xl font-bold">
+    <h1 class="">
         Buch bearbeiten
     </h1>
 
-    <form action="#" method="post" class="mb-6">
-        <div class="mb-4 grid grid-cols-2 gap-4 content-start">
-            <label for="title" class="hover:underline block text-gray-700 text-sm font-bold mb-2">
-                Buch Titel
+    <form action="#" method="post" class="">
+        <div class="label-input-container">
+            <label for="title" class="">
+                Buch Titel<span class="important">*</span>
             </label>
-            <input type="text" name="title" id="title"
-                   class="shadow border rounded py-2 px-3 text-gray-700 leading-tight focus:shadow-outline" value="">
+            <input type="text" required name="title" id="title" class="" value="">
+        </div>
+        <div class="label-input-container">
+            <label for="author" class="">
+                Autor<span class="important">*</span>
+            </label>
+            <input type="text" required name="author" id="author" class="" value="">
+        </div>
+        <div class="label-input-container">
+            <label for="verlag" class="">
+                Verlag<span class="important">*</span>
+            </label>
+            <select required name="verlag" id="verlag" class="">
+                <option selected disabled hidden value="">
+                    Verlag auswählen...
+                </option>
+                <option value="1">
+                    Verlag 1
+                </option>
+                <option value="2">
+                    Verlag 2
+                </option>
+                <option value="3">
+                    Verlag 3
+                </option>
+            </select>
+        </div>
+        <div class="label-input-container">
+            <label for="price" class="">
+                Preis
+            </label>
+            <input type="number" name="price" id="price" class="" value="">
+        </div>
+        <div class="label-input-container">
+            <label for="isbn" class="">
+                ISBN
+            </label>
+            <input type="text" name="isbn" id="isbn" class="" value="">
+        </div>
+        <div class="label-input-container">
+            <label for="rating" class="">
+                Bewertung
+            </label>
+            <select name="rating" id="rating" class="">
+                <option value="0">
+                    Keine
+                </option>
+                <option value="1">
+                    1
+                </option>
+                <option value="2">
+                    2
+                </option>
+                <option value="3">
+                    3
+                </option>
+                <option value="4">
+                    4
+                </option>
+                <option value="5">
+                    5
+                </option>
+            </select>
+        </div>
+        <div class="label-input-container">
+            <label for="comment" class="">
+                Kommentar
+            </label>
+            <textarea name="comment" id="comment" class="" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="">
+            <input type="submit" name="submit" id="submitButton" value="Speichern">
+            <input type="reset" name="reset" id="resetButton" value="Zurücksetzen">
+            <input type="button" name="cancel" id="cancelButton" value="Abbruch">
         </div>
     </form>
 </main>
