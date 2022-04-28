@@ -7,10 +7,4 @@ import java.util.Set;
 
 @ApplicationPath("/api")
 public class HelloApplication extends Application {
-    @Override
-    public Set<Class<?>> getClasses() {
-        HashSet<Class<?>> classes = new HashSet<>();
-        classes.add(HelloResource.class);
-        return classes;
-    }
 }
