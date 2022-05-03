@@ -1,4 +1,4 @@
-package dev.zwazel.chatbots;
+package dev.ash.glassfish;
 
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;

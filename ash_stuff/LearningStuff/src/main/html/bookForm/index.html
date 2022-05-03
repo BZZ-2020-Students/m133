@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ibid umm"/>
+    <meta name="copyright" content="moi"/>
+    <meta name="project" content="BuchFormular"/>
+    <meta name="description" content="TODO"/>
+    <title>Buch Bearbeiten</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./FIXME.js"></script>
+</head>
+<style>
+    *{
+        margin: 2px;
+    }
+    label {
+        display: inline-block;
+        width: 100px;
+    }
+</style>
+<body>
+<h1>Buch Bearbeiten</h1>
+<br>
+<form>
+    <label for="titel">Buchtitel:</label>
+    <input type="text" id="titel" name="buch_titel">
+    <br>
+    <label for="autor">Autor:</label>
+    <input type="text" id="autor" name="buch_autor">
+    <br>
+    <label for="verlag">Verlag:</label>
+    <select id="verlag" name="buch_verlag">
+        <option value="daw">DAW Books</option>
+        <option value="orellFuessli">Orell Füessli</option>
+        <option value="rex">Rex Verlag</option>
+    </select>
+    <br>
+    <label for="preis">Preis:</label>
+    <input type="number" id="preis" name="buch_preis" step="0.5">
+    <br>
+    <label for="isbn">ISBN:</label>
+    <input type="text" id="isbn" name="buch_isbn">
+    <br>
+    <label for="bewertung">Bewertung:</label>
+    <select id="bewertung" name="buch_bewertung">
+        <option value="none">Keine</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    <br>
+    <label for="kommentar">Kommentar:</label>
+    <textarea id="kommentar" name="buch_kommentar"></textarea>
+    <br>
+    <br>
+    <input type="submit" id="submit" name="submit_button" value="Speichern">
+    <input type="reset" id="reset" name="reset_button" value="Zurücksetzen">
+    <input type="reset" id="cancel" name="cancel_button" value="Abbruch">
+</form>
+</body>
+</html>
