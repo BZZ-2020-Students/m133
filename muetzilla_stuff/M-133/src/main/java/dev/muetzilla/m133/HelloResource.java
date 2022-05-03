@@ -1,4 +1,4 @@
-package dev.muetzilla.modul133;
+package dev.muetzilla.m133;
 
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
