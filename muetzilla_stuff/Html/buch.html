@@ -9,11 +9,11 @@
                 width:100px;
                 text-align: left;
             }
-            #kommentarLabel {
-              
+            #kommentarContainer *{
+                vertical-align: middle;
             }
             div{
-                padding:2px;
+                margin:2px;
             }
         </style>
 	</head>
@@ -54,7 +54,7 @@
                     <option value="5">5</option>
                 </select>
             </div>
-            <div>
+            <div id="kommentarContainer">
                 <label for="kommentarInput" id="kommentarLabel" name="kommentarLabel">Kommentar</label>
                 <textarea id="kommentarInput" name="kommentarInput" rows="6" cols="50">
                 </textarea>
