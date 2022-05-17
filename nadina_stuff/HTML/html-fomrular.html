@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buch Formular</title>
+
+    <!--CSS-->
+    <style>
+        label {
+            display: inline-block; 
+            width: 100px;
+        }
+        label, input, textarea, select{
+            margin: 5px;
+        }
+        .comment{
+            vertical-align: middle;
+        }
+      </style>
+
+  </head>
+  <body>
+      <h2>Buch bearbeiten</h2>
+      <form action="" method="post">
+        <label name="Buchtitel">Buchtitle</label>
+        <input name="inputbt">
+            <br>
+        <label name="Autor">Autor</label>
+        <input name="inputau">
+        <br>
+
+        <label name="Verlag">Verlag</label>
+        <select name="verlagname">
+            <option value="DAW Books">DAW Books</option>
+            <option value="Bilger Verlag">Bilger Verlag</option>
+            <option value="Diogenes Verlag">Diogenes Verlag</option>
+         </select>
+        
+            <br>
+        <label name="Preis">Preis</label>
+        <input name="inputpr">
+            <br>
+        <label name="ISBN">ISBN</label>
+        <input name="inputisbn">
+            <br>
+
+        <label name="Bewertung">Bewertung</label>
+        <select name="bewertungscl">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="keine">keine</option>
+         </select>
+
+            <br>
+        <label name="Kommentar" id="comment">Kommentar</label>
+        <textarea name="inputko" id="inputko"></textarea>
+            <br>
+
+        <!--Buttion section-->
+        
+        <button name="speichernbtn" id="speichernbtn">Speichern</button>
+        <button name="zurücksetzenbtn" id="zurücksetzenbtn">Zurücksetzen</button>
+        <button name="abbruchbtn" id="abbruchbtn">Abbruch</button>
+      </form>
+  </body>
+</html>
